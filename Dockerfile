@@ -5,6 +5,7 @@ COPY requirements.txt ./requirements.txt
 COPY 01_nlp_graph_creation.ipynb ./01_nlp_graph_creation.ipynb
 COPY 02_supervised_classification-embeddings.ipynb ./02_supervised_classification-embeddings.ipynb
 COPY 03_supervised_classsification_graphSAGE-TFIDF.ipynb ./03_supervised_classsification_graphSAGE-TFIDF.ipynb
+COPY subject_object_extraction.py ./subject_object_extraction.py
 RUN pip3  install -r requirements.txt
 RUN pip3 install --upgrade --no-deps --force-reinstall notebook
 #
